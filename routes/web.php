@@ -18,12 +18,8 @@ Route::get('/', function () {
 });
 
 
-
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/perm_add', 'HomeController@permAdd');
+
 
 
 Route::resource('tasks', 'TaskController');

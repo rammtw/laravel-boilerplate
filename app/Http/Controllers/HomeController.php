@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -26,14 +26,5 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
-    }
-
-    public function permAdd()
-    {
-        //$role = Role::create(['name' => 'writer']);
-        //$permission = Permission::create(['name' => 'edit articles']);
-
-        //auth()->user()->givePermissionTo('edit articles');
-        auth()->user()->assignRole('writer');
     }
 }

@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class TaskRepository
  * @package App\Repositories
- * @version January 17, 2018, 10:20 am UTC
+ * @version January 17, 2018, 11:04 am UTC
  *
  * @method Task findWithoutFail($id, $columns = ['*'])
  * @method Task find($id, $columns = ['*'])
